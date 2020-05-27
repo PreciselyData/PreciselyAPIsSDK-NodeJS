@@ -1,4 +1,4 @@
-![Precisely](/precisely_logo_purple.jpg)
+![Precisely] (/precisely_logo_purple.jpg)
 
 # Precisely APIs
 
