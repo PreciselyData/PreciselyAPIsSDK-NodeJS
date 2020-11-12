@@ -8285,7 +8285,7 @@ export class PhoneVerificationServiceApi {
      * @param includeNetworkInfo Y or N (default is Y) – if it is N, then network/carrier details will not be added in the response.
      */
     public phoneVerification (phoneNumber: string, includeNetworkInfo?: string) : Promise<{ response: http.IncomingMessage; body: PhoneVerification;  }> {
-        const localVarPath = this.basePath + '/phoneverification/v1/phoneVerification';
+        const localVarPath = this.basePath + '/phoneverification/v1/phoneverification';
         let queryParameters: any = {};
         let headerParams: any =  this.defaultHeaders;
         let formParams: any = {};
