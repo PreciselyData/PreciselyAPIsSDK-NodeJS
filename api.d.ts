@@ -204,6 +204,10 @@ export declare class BufferRelation {
     'description': string;
     'value': string;
 }
+export declare class BusinessId {
+    'type': string;
+    'value': string;
+}
 export declare class Candidate {
     'precisionLevel': number;
     'formattedStreetAddress': string;
@@ -942,6 +946,7 @@ export declare class GeoRouteResponse {
     'time': number;
     'geometry': RouteGeometry;
     'routeDirections': RouteDirections;
+    'intermediatePoints': IntermediatePoints;
 }
 export declare class GeoTaxLocations {
     'geometry': Geometry;
@@ -1242,6 +1247,10 @@ export declare class Interest {
     'parentIds': Array<string>;
     'category': string;
 }
+export declare class IntermediatePoints {
+    'type': string;
+    'coordinates': Array<Array<number>>;
+}
 export declare class Intersection {
     'distance': Unit;
     'driveTime': Unit;
@@ -1412,17 +1421,26 @@ export declare class POIByGeometryRequest {
     'maxCandidates': string;
     'fuzzyOnName': string;
     'page': string;
+    'matchMode': string;
+    'specificMatchOn': string;
     'geometry': CommonGeometry;
     'geometryAsText': string;
 }
 export declare class POIPlaces {
     'id': string;
+    'poiId': string;
+    'pbkey': string;
+    'parentPbkey': string;
+    'geocodeConfidence': string;
+    'ceoName': string;
+    'ceoTitle': string;
     'name': string;
     'brandName': string;
     'tradeName': string;
     'franchiseName': string;
     'open24Hours': string;
     'distance': Distance;
+    'businessId': BusinessId;
     'relevanceScore': string;
     'contactDetails': PoiContactDetails;
     'poiClassification': PoiClassification;
@@ -3003,11 +3021,11 @@ export declare class PlacesServiceApi {
         response: http.IncomingMessage;
         body: POIPlaces;
     }>;
-    getPOIsByAddress(address: string, country?: string, name?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, searchRadius?: string, searchRadiusUnit?: string, travelTime?: string, travelTimeUnit?: string, travelDistance?: string, travelDistanceUnit?: string, travelMode?: string, sortBy?: string, fuzzyOnName?: string, page?: string): Promise<{
+    getPOIsByAddress(address: string, country?: string, name?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, searchRadius?: string, searchRadiusUnit?: string, travelTime?: string, travelTimeUnit?: string, travelDistance?: string, travelDistanceUnit?: string, travelMode?: string, sortBy?: string, fuzzyOnName?: string, page?: string, matchMode?: string, specificMatchOn?: string): Promise<{
         response: http.IncomingMessage;
         body: GeoEnrichResponse;
     }>;
-    getPOIsByArea(country: string, areaName3?: string, postcode1?: string, postcode2?: string, name?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, fuzzyOnName?: string, page?: string): Promise<{
+    getPOIsByArea(country: string, areaName3?: string, postcode1?: string, postcode2?: string, name?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, fuzzyOnName?: string, page?: string, matchMode?: string, specificMatchOn?: string): Promise<{
         response: http.IncomingMessage;
         body: GeoEnrichResponse;
     }>;
@@ -3015,7 +3033,7 @@ export declare class PlacesServiceApi {
         response: http.IncomingMessage;
         body: Pois;
     }>;
-    getPOIsByLocation(longitude: string, latitude: string, searchText?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, searchRadius?: string, searchRadiusUnit?: string, travelTime?: string, travelTimeUnit?: string, travelDistance?: string, travelDistanceUnit?: string, travelMode?: string, sortBy?: string, fuzzyOnName?: string, page?: string, searchOnNameOnly?: string): Promise<{
+    getPOIsByLocation(longitude: string, latitude: string, searchText?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, searchRadius?: string, searchRadiusUnit?: string, travelTime?: string, travelTimeUnit?: string, travelDistance?: string, travelDistanceUnit?: string, travelMode?: string, sortBy?: string, fuzzyOnName?: string, page?: string, searchOnNameOnly?: string, matchMode?: string, specificMatchOn?: string): Promise<{
         response: http.IncomingMessage;
         body: GeoEnrichResponse;
     }>;
@@ -3027,7 +3045,7 @@ export declare class PlacesServiceApi {
         response: http.IncomingMessage;
         body: GeoEnrichMetadataResponse;
     }>;
-    poisAutocomplete(longitude?: string, latitude?: string, searchText?: string, searchRadius?: string, searchRadiusUnit?: string, travelTime?: string, travelTimeUnit?: string, travelDistance?: string, travelDistanceUnit?: string, travelMode?: string, country?: string, areaName1?: string, areaName3?: string, postcode1?: string, postcode2?: string, ipAddress?: string, autoDetectLocation?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, sortBy?: string, searchOnNameOnly?: string): Promise<{
+    poisAutocomplete(longitude?: string, latitude?: string, searchText?: string, searchRadius?: string, searchRadiusUnit?: string, travelTime?: string, travelTimeUnit?: string, travelDistance?: string, travelDistanceUnit?: string, travelMode?: string, country?: string, areaName1?: string, areaName3?: string, postcode1?: string, postcode2?: string, ipAddress?: string, autoDetectLocation?: string, type?: string, categoryCode?: string, sicCode?: string, maxCandidates?: string, sortBy?: string, searchOnNameOnly?: string, matchMode?: string, specificMatchOn?: string): Promise<{
         response: http.IncomingMessage;
         body: GeoEnrichResponse;
     }>;
@@ -3182,11 +3200,11 @@ export declare class RoutingServiceApi {
     set useQuerystring(value: boolean);
     setApiKey(key: RoutingServiceApiApiKeys, value: string): void;
     set accessToken(token: string);
-    getRouteByAddress(startAddress: string, endAddress: string, db?: string, country?: string, intermediateAddresses?: string, oip?: string, destinationSrs?: string, optimizeBy?: string, returnDistance?: string, distanceUnit?: string, returnTime?: string, timeUnit?: string, language?: string, directionsStyle?: string, segmentGeometryStyle?: string, primaryNameOnly?: string, majorRoads?: string, historicTrafficTimeBucket?: string, returnDirectionGeometry?: string, useCvr?: string, looseningBarrierRestrictions?: string, vehicleType?: string, weight?: string, weightUnit?: string, height?: string, heightUnit?: string, length?: string, lengthUnit?: string, width?: string, widthUnit?: string): Promise<{
+    getRouteByAddress(startAddress: string, endAddress: string, db?: string, country?: string, intermediateAddresses?: string, oip?: string, destinationSrs?: string, optimizeBy?: string, returnDistance?: string, distanceUnit?: string, returnTime?: string, timeUnit?: string, language?: string, directionsStyle?: string, segmentGeometryStyle?: string, primaryNameOnly?: string, majorRoads?: string, historicTrafficTimeBucket?: string, returnDirectionGeometry?: string, useCvr?: string, looseningBarrierRestrictions?: string, vehicleType?: string, weight?: string, weightUnit?: string, height?: string, heightUnit?: string, length?: string, lengthUnit?: string, width?: string, widthUnit?: string, returnIntermediatePoints?: string): Promise<{
         response: http.IncomingMessage;
         body: GeoRouteResponse;
     }>;
-    getRouteByLocation(startPoint: string, endPoint: string, db?: string, intermediatePoints?: string, oip?: string, destinationSrs?: string, optimizeBy?: string, returnDistance?: string, distanceUnit?: string, returnTime?: string, timeUnit?: string, language?: string, directionsStyle?: string, segmentGeometryStyle?: string, primaryNameOnly?: string, majorRoads?: string, historicTrafficTimeBucket?: string, returnDirectionGeometry?: string, useCvr?: string, looseningBarrierRestrictions?: string, vehicleType?: string, weight?: string, weightUnit?: string, height?: string, heightUnit?: string, length?: string, lengthUnit?: string, width?: string, widthUnit?: string): Promise<{
+    getRouteByLocation(startPoint: string, endPoint: string, db?: string, intermediatePoints?: string, oip?: string, destinationSrs?: string, optimizeBy?: string, returnDistance?: string, distanceUnit?: string, returnTime?: string, timeUnit?: string, language?: string, directionsStyle?: string, segmentGeometryStyle?: string, primaryNameOnly?: string, majorRoads?: string, historicTrafficTimeBucket?: string, returnDirectionGeometry?: string, useCvr?: string, looseningBarrierRestrictions?: string, vehicleType?: string, weight?: string, weightUnit?: string, height?: string, heightUnit?: string, length?: string, lengthUnit?: string, width?: string, widthUnit?: string, returnIntermediatePoints?: string): Promise<{
         response: http.IncomingMessage;
         body: GeoRouteResponse;
     }>;

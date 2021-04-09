@@ -3,7 +3,7 @@ var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
     };
     return function (d, b) {
@@ -13,15 +13,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CommuterPatternsTheme = exports.Community = exports.CommonState = exports.CommonGeometry = exports.CommonAddress = exports.City = exports.ChannelPreferencesTheme = exports.Center = exports.Census = exports.Cbsa = exports.CategoryMetadata = exports.Category = exports.CarrierRouteResponseList = exports.CarrierRouteResponse = exports.CarrierRoutePreference = exports.CarrierRouteBoundaries = exports.CarrierRouteAddressRequest = exports.Carrier = exports.CandidateRangeUnit = exports.CandidateRange = exports.Candidate = exports.BufferRelation = exports.BoundaryPoint = exports.BoundaryBuffer = exports.Boundary = exports.Boundaries = exports.BasicBoundaryAddress = exports.BasicBoundary = exports.BaseFloodElevation = exports.AutomobileTheme = exports.AttitudesAndMotivationTheme = exports.AssetsAndWealthTheme = exports.AreaCodeInfo = exports.Area = exports.AgeTheme = exports.Age = exports.AddressesResponse = exports.AddressesPreferences = exports.AddressesDTO = exports.AddressesCount = exports.AddressesByBoundaryRequest = exports.AddressType = exports.AddressTime = exports.Address = exports.Accuracy = exports.AHJmailingAddress = exports.AHJPlusPSAPResponse = exports.AHJList = exports.AHJ = exports.oAuthCredInfo = void 0;
-exports.EarthquakeRiskResponse = exports.EarthquakeRiskPreferences = exports.EarthquakeRiskLocationResponseList = exports.EarthquakeRiskLocationResponse = exports.EarthquakeRiskByLocationRequest = exports.EarthquakeRiskByAddressRequest = exports.EarthquakeLocation = exports.EarthquakeHistory = exports.EarthquakeEventsResponse = exports.EarthquakeEvent = exports.DomesticUltimateBusiness = exports.DistrictType = exports.DistanceToFloodHazardResponse = exports.DistanceToFloodHazardLocationResponse = exports.DistanceToFloodHazardLocationRequest = exports.DistanceToFloodHazardAddressRequest = exports.DistanceToBorder = exports.Distance = exports.DirectionGeometry = exports.Dictionary = exports.DeviceStatusNetwork = exports.Depth = exports.DemographicsThemesV2 = exports.DemographicsThemes = exports.DemographicsAdvancedRequest = exports.DemographicsAdvancedPreferences = exports.Demographics = exports.DateTimeEarthQuake = exports.CustomPreferences = exports.CustomObjectMember = exports.CustomObject = exports.Crs = exports.CrimeRiskResponseList = exports.CrimeRiskResponse = exports.CrimeRiskPreferences = exports.CrimeRiskLocationResponseList = exports.CrimeRiskLocationResponse = exports.CrimeRiskByLocationRequest = exports.CrimeRiskByAddressRequest = exports.CrimeIndexTheme = exports.CrimeBoundary = exports.Coverage = exports.County = exports.CountrySupport = exports.Costs = exports.Cost = exports.ContactPerson = exports.ContactDetails = exports.ConsistencyCode = exports.ConfiguredDictionaryResponse = void 0;
-exports.GeoLocationFixedLineCountry = exports.GeoLocationFixedLine = exports.GeoLocationCountry = exports.GeoLocationAccessPoint = exports.GeoEnrichResponse = exports.GeoEnrichMetadataResponse = exports.GenderTheme = exports.FreeOrReducedPriceLunches = exports.FloodZone = exports.FloodRiskResponseList = exports.FloodRiskResponse = exports.FloodRiskPreferences = exports.FloodRiskLocationResponseList = exports.FloodRiskLocationResponse = exports.FloodRiskByLocationRequest = exports.FloodRiskByAddressRequest = exports.FloodHazardPreferences = exports.FloodBoundary = exports.FireStationsLocation = exports.FireStations = exports.FireStationContactDetails = exports.FireStation = exports.FireShed = exports.FireRiskResponseList = exports.FireRiskResponse = exports.FireRiskLocationResponseList = exports.FireRiskLocationResponse = exports.FireRiskByLocationRequest = exports.FireRiskByAddressRequest = exports.FireHistory = exports.FireEventsResponse = exports.FireEvent = exports.FireDepartmentContactDetails = exports.FireDepartment = exports.FinancialProductsTheme = exports.FieldsMatching = exports.FieldV2 = exports.Field = exports.ExpenditureTheme = exports.EventsCount = exports.EthnicityTheme = exports.End = exports.EmploymentTheme = exports.Employment = exports.EmployeeCount = exports.Email = exports.EducationalAttainmentTheme = exports.EducationTheme = exports.Education = exports.EarthquakeRiskResponseList = void 0;
-exports.Identity = exports.IPDTaxJurisdiction = exports.IPDTaxByAddressBatchRequest = exports.HousingTheme = exports.HouseholdsTheme = exports.HouseholdSizeTheme = exports.HealthTheme = exports.Grid = exports.Greatschools = exports.GradeLevelsTaught = exports.GlobalUltimateBusiness = exports.GetPostalCodesAPIResponse = exports.GetPostalCodesAPIRequest = exports.GetPostalCodesAPIOutput = exports.GetPostalCodesAPIOptions = exports.GetPostalCodesAPIInputRow = exports.GetPostalCodesAPIInput = exports.GetCityStateProvinceAPIResponse = exports.GetCityStateProvinceAPIRequest = exports.GetCityStateProvinceAPIOutput = exports.GetCityStateProvinceAPIOptions = exports.GetCityStateProvinceAPIInputRow = exports.GetCityStateProvinceAPIInput = exports.GeosearchLocations = exports.GeosearchLocation = exports.Geometry = exports.GeocodeServiceResponseList = exports.GeocodeServiceResponse = exports.GeocodeRequestAddress = exports.GeocodeRequest = exports.GeocodePreferences = exports.GeocodeCustomPreferences = exports.GeocodeCapabilitiesResponse = exports.GeocodeAddress = exports.GeoZoneGeometry = exports.GeoTaxRateLocations = exports.GeoTaxLocations = exports.GeoRouteResponse = exports.GeoRiskLocations = exports.GeoRiskGeometry = exports.GeoRiskCrimeTheme = exports.GeoRiskBoundaries = exports.GeoPropertyResponses = exports.GeoPropertyResponse = exports.GeoPropertyAddressRequest = exports.GeoPostGeometry = exports.GeoPos = exports.GeoLocationState = exports.GeoLocationPlace = exports.GeoLocationIpAddr = void 0;
-exports.PlaceLocation = exports.PlaceByLocationsLocation = exports.PlaceByLocations = exports.Photo = exports.PhoneVerification = exports.PbKey = exports.ParentBusiness = exports.ParcelBoundary = exports.Parcel = exports.PSAPResponse = exports.POIPlaces = exports.POIByGeometryRequest = exports.POIBoundaryResponse = exports.POIBoundaryLocations = exports.POIBoundaryLocationRequest = exports.POIBoundaryAddressRequest = exports.PBKeyResponseList = exports.PBKeyResponse = exports.PBKeyAddressRequest = exports.OutputParameter = exports.OrganizationType = exports.Operation = exports.Network = exports.Mcd = exports.Matrix = exports.MatchedAddress = exports.Match = exports.MaritalStatusTheme = exports.Magnitude = exports.LocationTime = exports.Location = exports.LifeStyleTheme = exports.LatLongFields = exports.Keys = exports.KeyLookupRequest = exports.Ipd = exports.IpInfo = exports.IntersectionResponse = exports.Intersection = exports.Interest = exports.InputParameter = exports.IndividualValueVariableV2 = exports.IndividualValueVariable = exports.IndexVariable = exports.IncomeThemeV2 = exports.IncomeTheme = exports.IdentityResponse = exports.IdentityName = exports.IdentityDetail = exports.IdentityDemographics = void 0;
-exports.SiteDetails = exports.SicMetadata = exports.Sic = exports.ShoreLineDistance = exports.SegmentationThemes = exports.Segmentation = exports.SchoolsNearByResponse = exports.SchoolRanking = exports.SchoolProfile = exports.SchoolDistrict = exports.School = exports.SalesVolume = exports.SalesTaxRate = exports.SalesTax = exports.RouteGeometry = exports.RouteDirections = exports.RouteDirection = exports.RouteDelivery = exports.RouteBoundary = exports.Road = exports.RiskAddress = exports.Risk = exports.ReverseGeocodeRequest = exports.ReturnFieldsDescriptor = exports.RateCenterResponse = exports.Rate = exports.RangeVariableV2 = exports.RangeVariable = exports.RaceTheme = exports.RaceAndEthnicityTheme = exports.PurchasingBehaviorTheme = exports.Proxy = exports.Properties = exports.Profiles = exports.Profile = exports.PrimaryZone = exports.Preferences = exports.PreferencTimeZone = exports.PopulationTheme = exports.PolygonGeometry = exports.Pois = exports.Points = exports.PoiCountRequest = exports.PoiCount = exports.PoiContactDetails = exports.PoiClassification = exports.PoiBoundaryPreferences = exports.PoiBoundary = exports.Poi = exports.PlaceLocationName = void 0;
-exports.Url = exports.Unit = exports.TypeaheadUnit = exports.TypeaheadRange = exports.Type = exports.TravelCostMatrixResponse = exports.TravelBoundary = exports.TravelBoundaries = exports.Topic = exports.TimezoneResponse = exports.TimezoneLocationResponse = exports.TimezoneLocationRequest = exports.TimezoneLocation = exports.TimezoneAddressRequest = exports.Timezone = exports.Time = exports.TaxState = exports.TaxResponses = exports.TaxResponse = exports.TaxRateResponses = exports.TaxRateResponse = exports.TaxRateLocationResponses = exports.TaxRateLocationRequest = exports.TaxRateBatchResponse = exports.TaxRateBatchLocationResponse = exports.TaxRateAddressRequest = exports.TaxRateAddress = exports.TaxPlace = exports.TaxLocationResponses = exports.TaxLocationRequest = exports.TaxLocationPreferences = exports.TaxJurisdiction = exports.TaxDistrictResponseList = exports.TaxDistrictResponse = exports.TaxCounty = exports.TaxBatchResponse = exports.TaxBatchLocationResponse = exports.TaxAddressRequest = exports.TaxAddress = exports.SupportLevel = exports.SupplyAndDemandTheme = exports.StudentEthnicity = exports.Status = exports.StartEndPoint = exports.Start = exports.SpeedRoad = exports.SpeedLimit = exports.SpecialPurposeDistrictTaxRate = exports.SpecialPurposeDistrictTax = exports.SpecialPurposeDistrict = void 0;
-exports.IdentityProfilesServiceApiApiKeys = exports.GeolocationServiceApi = exports.GeolocationServiceApiApiKeys = exports.GeocodeServiceApi = exports.GeocodeServiceApiApiKeys = exports.EmailVerificationServiceApi = exports.EmailVerificationServiceApiApiKeys = exports.DemographicsServiceApi = exports.DemographicsServiceApiApiKeys = exports.AddressesAPIServiceApi = exports.AddressesAPIServiceApiApiKeys = exports.AddressVerificationServiceApi = exports.AddressVerificationServiceApiApiKeys = exports.OAuth = exports.WaterBodyResponse = exports.WaterBodyLocationResponse = exports.WaterBody = exports.ValidateMailingAddressUSCANAPIResponse = exports.ValidateMailingAddressUSCANAPIRequest = exports.ValidateMailingAddressUSCANAPIOutput = exports.ValidateMailingAddressUSCANAPIOptions = exports.ValidateMailingAddressUSCANAPIInputRow = exports.ValidateMailingAddressUSCANAPIInput = exports.ValidateMailingAddressResponse = exports.ValidateMailingAddressRequest = exports.ValidateMailingAddressProResponse = exports.ValidateMailingAddressProRequest = exports.ValidateMailingAddressProOutput = exports.ValidateMailingAddressProOptions = exports.ValidateMailingAddressProInputRow = exports.ValidateMailingAddressProInput = exports.ValidateMailingAddressPremiumResponse = exports.ValidateMailingAddressPremiumRequest = exports.ValidateMailingAddressPremiumOutput = exports.ValidateMailingAddressPremiumOptions = exports.ValidateMailingAddressPremiumInputRow = exports.ValidateMailingAddressPremiumInput = exports.ValidateMailingAddressOutput = exports.ValidateMailingAddressOptions = exports.ValidateMailingAddressInputRowUserFields = exports.ValidateMailingAddressInputRow = exports.ValidateMailingAddressInput = exports.ValidateEmailAddressOutput = exports.ValidateEmailAddressOptions = exports.ValidateEmailAddressInputRow = exports.ValidateEmailAddressInput = exports.ValidateEmailAddressAPIResponse = exports.ValidateEmailAddressAPIRequest = exports.UseTaxRate = exports.UseTax = void 0;
-exports._911PSAPServiceApi = exports._911PSAPServiceApiApiKeys = exports.ZonesServiceApi = exports.ZonesServiceApiApiKeys = exports.TypeaheadServiceApi = exports.TypeaheadServiceApiApiKeys = exports.TimeZoneServiceApi = exports.TimeZoneServiceApiApiKeys = exports.TelecommInfoServiceApi = exports.TelecommInfoServiceApiApiKeys = exports.StreetsServiceApi = exports.StreetsServiceApiApiKeys = exports.SchoolsServiceApi = exports.SchoolsServiceApiApiKeys = exports.RoutingServiceApi = exports.RoutingServiceApiApiKeys = exports.RisksServiceApi = exports.RisksServiceApiApiKeys = exports.PropertyInformationServiceApi = exports.PropertyInformationServiceApiApiKeys = exports.PlacesServiceApi = exports.PlacesServiceApiApiKeys = exports.PhoneVerificationServiceApi = exports.PhoneVerificationServiceApiApiKeys = exports.NeighborhoodsServiceApi = exports.NeighborhoodsServiceApiApiKeys = exports.LocalTaxServiceApi = exports.LocalTaxServiceApiApiKeys = exports.IdentityProfilesServiceApi = void 0;
+exports._911PSAPServiceApi = exports._911PSAPServiceApiApiKeys = exports.ZonesServiceApi = exports.ZonesServiceApiApiKeys = exports.TypeaheadServiceApi = exports.TypeaheadServiceApiApiKeys = exports.TimeZoneServiceApi = exports.TimeZoneServiceApiApiKeys = exports.TelecommInfoServiceApi = exports.TelecommInfoServiceApiApiKeys = exports.StreetsServiceApi = exports.StreetsServiceApiApiKeys = exports.SchoolsServiceApi = exports.SchoolsServiceApiApiKeys = exports.RoutingServiceApi = exports.RoutingServiceApiApiKeys = exports.RisksServiceApi = exports.RisksServiceApiApiKeys = exports.PropertyInformationServiceApi = exports.PropertyInformationServiceApiApiKeys = exports.PlacesServiceApi = exports.PlacesServiceApiApiKeys = exports.PhoneVerificationServiceApi = exports.PhoneVerificationServiceApiApiKeys = exports.NeighborhoodsServiceApi = exports.NeighborhoodsServiceApiApiKeys = exports.LocalTaxServiceApi = exports.LocalTaxServiceApiApiKeys = exports.IdentityProfilesServiceApi = exports.IdentityProfilesServiceApiApiKeys = exports.GeolocationServiceApi = exports.GeolocationServiceApiApiKeys = exports.GeocodeServiceApi = exports.GeocodeServiceApiApiKeys = exports.EmailVerificationServiceApi = exports.EmailVerificationServiceApiApiKeys = exports.DemographicsServiceApi = exports.DemographicsServiceApiApiKeys = exports.AddressesAPIServiceApi = exports.AddressesAPIServiceApiApiKeys = exports.AddressVerificationServiceApi = exports.AddressVerificationServiceApiApiKeys = exports.OAuth = exports.WaterBodyResponse = exports.WaterBodyLocationResponse = exports.WaterBody = exports.ValidateMailingAddressUSCANAPIResponse = exports.ValidateMailingAddressUSCANAPIRequest = exports.ValidateMailingAddressUSCANAPIOutput = exports.ValidateMailingAddressUSCANAPIOptions = exports.ValidateMailingAddressUSCANAPIInputRow = exports.ValidateMailingAddressUSCANAPIInput = exports.ValidateMailingAddressResponse = exports.ValidateMailingAddressRequest = exports.ValidateMailingAddressProResponse = exports.ValidateMailingAddressProRequest = exports.ValidateMailingAddressProOutput = exports.ValidateMailingAddressProOptions = exports.ValidateMailingAddressProInputRow = exports.ValidateMailingAddressProInput = exports.ValidateMailingAddressPremiumResponse = exports.ValidateMailingAddressPremiumRequest = exports.ValidateMailingAddressPremiumOutput = exports.ValidateMailingAddressPremiumOptions = exports.ValidateMailingAddressPremiumInputRow = exports.ValidateMailingAddressPremiumInput = exports.ValidateMailingAddressOutput = exports.ValidateMailingAddressOptions = exports.ValidateMailingAddressInputRowUserFields = exports.ValidateMailingAddressInputRow = exports.ValidateMailingAddressInput = exports.ValidateEmailAddressOutput = exports.ValidateEmailAddressOptions = exports.ValidateEmailAddressInputRow = exports.ValidateEmailAddressInput = exports.ValidateEmailAddressAPIResponse = exports.ValidateEmailAddressAPIRequest = exports.UseTaxRate = exports.UseTax = exports.Url = exports.Unit = exports.TypeaheadUnit = exports.TypeaheadRange = exports.Type = exports.TravelCostMatrixResponse = exports.TravelBoundary = exports.TravelBoundaries = exports.Topic = exports.TimezoneResponse = exports.TimezoneLocationResponse = exports.TimezoneLocationRequest = exports.TimezoneLocation = exports.TimezoneAddressRequest = exports.Timezone = exports.Time = exports.TaxState = exports.TaxResponses = exports.TaxResponse = exports.TaxRateResponses = exports.TaxRateResponse = exports.TaxRateLocationResponses = exports.TaxRateLocationRequest = exports.TaxRateBatchResponse = exports.TaxRateBatchLocationResponse = exports.TaxRateAddressRequest = exports.TaxRateAddress = exports.TaxPlace = exports.TaxLocationResponses = exports.TaxLocationRequest = exports.TaxLocationPreferences = exports.TaxJurisdiction = exports.TaxDistrictResponseList = exports.TaxDistrictResponse = exports.TaxCounty = exports.TaxBatchResponse = exports.TaxBatchLocationResponse = exports.TaxAddressRequest = exports.TaxAddress = exports.SupportLevel = exports.SupplyAndDemandTheme = exports.StudentEthnicity = exports.Status = exports.StartEndPoint = exports.Start = exports.SpeedRoad = exports.SpeedLimit = exports.SpecialPurposeDistrictTaxRate = exports.SpecialPurposeDistrictTax = exports.SpecialPurposeDistrict = exports.SiteDetails = exports.SicMetadata = exports.Sic = exports.ShoreLineDistance = exports.SegmentationThemes = exports.Segmentation = exports.SchoolsNearByResponse = exports.SchoolRanking = exports.SchoolProfile = exports.SchoolDistrict = exports.School = exports.SalesVolume = exports.SalesTaxRate = exports.SalesTax = exports.RouteGeometry = exports.RouteDirections = exports.RouteDirection = exports.RouteDelivery = exports.RouteBoundary = exports.Road = exports.RiskAddress = exports.Risk = exports.ReverseGeocodeRequest = exports.ReturnFieldsDescriptor = exports.RateCenterResponse = exports.Rate = exports.RangeVariableV2 = exports.RangeVariable = exports.RaceTheme = exports.RaceAndEthnicityTheme = exports.PurchasingBehaviorTheme = exports.Proxy = exports.Properties = exports.Profiles = exports.Profile = exports.PrimaryZone = exports.Preferences = exports.PreferencTimeZone = exports.PopulationTheme = exports.PolygonGeometry = exports.Pois = exports.Points = exports.PoiCountRequest = exports.PoiCount = exports.PoiContactDetails = exports.PoiClassification = exports.PoiBoundaryPreferences = exports.PoiBoundary = exports.Poi = exports.PlaceLocationName = exports.PlaceLocation = exports.PlaceByLocationsLocation = exports.PlaceByLocations = exports.Photo = exports.PhoneVerification = exports.PbKey = exports.ParentBusiness = exports.ParcelBoundary = exports.Parcel = exports.PSAPResponse = exports.POIPlaces = exports.POIByGeometryRequest = exports.POIBoundaryResponse = exports.POIBoundaryLocations = exports.POIBoundaryLocationRequest = exports.POIBoundaryAddressRequest = exports.PBKeyResponseList = exports.PBKeyResponse = exports.PBKeyAddressRequest = exports.OutputParameter = exports.OrganizationType = exports.Operation = exports.Network = exports.Mcd = exports.Matrix = exports.MatchedAddress = exports.Match = exports.MaritalStatusTheme = exports.Magnitude = exports.LocationTime = exports.Location = exports.LifeStyleTheme = exports.LatLongFields = exports.Keys = exports.KeyLookupRequest = exports.Ipd = exports.IpInfo = exports.IntersectionResponse = exports.Intersection = exports.IntermediatePoints = exports.Interest = exports.InputParameter = exports.IndividualValueVariableV2 = exports.IndividualValueVariable = exports.IndexVariable = exports.IncomeThemeV2 = exports.IncomeTheme = exports.IdentityResponse = exports.IdentityName = exports.IdentityDetail = exports.IdentityDemographics = exports.Identity = exports.IPDTaxJurisdiction = exports.IPDTaxByAddressBatchRequest = exports.HousingTheme = exports.HouseholdsTheme = exports.HouseholdSizeTheme = exports.HealthTheme = exports.Grid = exports.Greatschools = exports.GradeLevelsTaught = exports.GlobalUltimateBusiness = exports.GetPostalCodesAPIResponse = exports.GetPostalCodesAPIRequest = exports.GetPostalCodesAPIOutput = exports.GetPostalCodesAPIOptions = exports.GetPostalCodesAPIInputRow = exports.GetPostalCodesAPIInput = exports.GetCityStateProvinceAPIResponse = exports.GetCityStateProvinceAPIRequest = exports.GetCityStateProvinceAPIOutput = exports.GetCityStateProvinceAPIOptions = exports.GetCityStateProvinceAPIInputRow = exports.GetCityStateProvinceAPIInput = exports.GeosearchLocations = exports.GeosearchLocation = exports.Geometry = exports.GeocodeServiceResponseList = exports.GeocodeServiceResponse = exports.GeocodeRequestAddress = exports.GeocodeRequest = exports.GeocodePreferences = exports.GeocodeCustomPreferences = exports.GeocodeCapabilitiesResponse = exports.GeocodeAddress = exports.GeoZoneGeometry = exports.GeoTaxRateLocations = exports.GeoTaxLocations = exports.GeoRouteResponse = exports.GeoRiskLocations = exports.GeoRiskGeometry = exports.GeoRiskCrimeTheme = exports.GeoRiskBoundaries = exports.GeoPropertyResponses = exports.GeoPropertyResponse = exports.GeoPropertyAddressRequest = exports.GeoPostGeometry = exports.GeoPos = exports.GeoLocationState = exports.GeoLocationPlace = exports.GeoLocationIpAddr = exports.GeoLocationFixedLineCountry = exports.GeoLocationFixedLine = exports.GeoLocationCountry = exports.GeoLocationAccessPoint = exports.GeoEnrichResponse = exports.GeoEnrichMetadataResponse = exports.GenderTheme = exports.FreeOrReducedPriceLunches = exports.FloodZone = exports.FloodRiskResponseList = exports.FloodRiskResponse = exports.FloodRiskPreferences = exports.FloodRiskLocationResponseList = exports.FloodRiskLocationResponse = exports.FloodRiskByLocationRequest = exports.FloodRiskByAddressRequest = exports.FloodHazardPreferences = exports.FloodBoundary = exports.FireStationsLocation = exports.FireStations = exports.FireStationContactDetails = exports.FireStation = exports.FireShed = exports.FireRiskResponseList = exports.FireRiskResponse = exports.FireRiskLocationResponseList = exports.FireRiskLocationResponse = exports.FireRiskByLocationRequest = exports.FireRiskByAddressRequest = exports.FireHistory = exports.FireEventsResponse = exports.FireEvent = exports.FireDepartmentContactDetails = exports.FireDepartment = exports.FinancialProductsTheme = exports.FieldsMatching = exports.FieldV2 = exports.Field = exports.ExpenditureTheme = exports.EventsCount = exports.EthnicityTheme = exports.End = exports.EmploymentTheme = exports.Employment = exports.EmployeeCount = exports.Email = exports.EducationalAttainmentTheme = exports.EducationTheme = exports.Education = exports.EarthquakeRiskResponseList = exports.EarthquakeRiskResponse = exports.EarthquakeRiskPreferences = exports.EarthquakeRiskLocationResponseList = exports.EarthquakeRiskLocationResponse = exports.EarthquakeRiskByLocationRequest = exports.EarthquakeRiskByAddressRequest = exports.EarthquakeLocation = exports.EarthquakeHistory = exports.EarthquakeEventsResponse = exports.EarthquakeEvent = exports.DomesticUltimateBusiness = exports.DistrictType = exports.DistanceToFloodHazardResponse = exports.DistanceToFloodHazardLocationResponse = exports.DistanceToFloodHazardLocationRequest = exports.DistanceToFloodHazardAddressRequest = exports.DistanceToBorder = exports.Distance = exports.DirectionGeometry = exports.Dictionary = exports.DeviceStatusNetwork = exports.Depth = exports.DemographicsThemesV2 = exports.DemographicsThemes = exports.DemographicsAdvancedRequest = exports.DemographicsAdvancedPreferences = exports.Demographics = exports.DateTimeEarthQuake = exports.CustomPreferences = exports.CustomObjectMember = exports.CustomObject = exports.Crs = exports.CrimeRiskResponseList = exports.CrimeRiskResponse = exports.CrimeRiskPreferences = exports.CrimeRiskLocationResponseList = exports.CrimeRiskLocationResponse = exports.CrimeRiskByLocationRequest = exports.CrimeRiskByAddressRequest = exports.CrimeIndexTheme = exports.CrimeBoundary = exports.Coverage = exports.County = exports.CountrySupport = exports.Costs = exports.Cost = exports.ContactPerson = exports.ContactDetails = exports.ConsistencyCode = exports.ConfiguredDictionaryResponse = exports.CommuterPatternsTheme = exports.Community = exports.CommonState = exports.CommonGeometry = exports.CommonAddress = exports.City = exports.ChannelPreferencesTheme = exports.Center = exports.Census = exports.Cbsa = exports.CategoryMetadata = exports.Category = exports.CarrierRouteResponseList = exports.CarrierRouteResponse = exports.CarrierRoutePreference = exports.CarrierRouteBoundaries = exports.CarrierRouteAddressRequest = exports.Carrier = exports.CandidateRangeUnit = exports.CandidateRange = exports.Candidate = exports.BusinessId = exports.BufferRelation = exports.BoundaryPoint = exports.BoundaryBuffer = exports.Boundary = exports.Boundaries = exports.BasicBoundaryAddress = exports.BasicBoundary = exports.BaseFloodElevation = exports.AutomobileTheme = exports.AttitudesAndMotivationTheme = exports.AssetsAndWealthTheme = exports.AreaCodeInfo = exports.Area = exports.AgeTheme = exports.Age = exports.AddressesResponse = exports.AddressesPreferences = exports.AddressesDTO = exports.AddressesCount = exports.AddressesByBoundaryRequest = exports.AddressType = exports.AddressTime = exports.Address = exports.Accuracy = exports.AHJmailingAddress = exports.AHJPlusPSAPResponse = exports.AHJList = exports.AHJ = exports.oAuthCredInfo = void 0;
 var request = require("request");
 var moment = require("moment");
 var Promise = require("bluebird");
@@ -200,6 +192,12 @@ var BufferRelation = (function () {
     return BufferRelation;
 }());
 exports.BufferRelation = BufferRelation;
+var BusinessId = (function () {
+    function BusinessId() {
+    }
+    return BusinessId;
+}());
+exports.BusinessId = BusinessId;
 var Candidate = (function () {
     function Candidate() {
     }
@@ -1312,6 +1310,12 @@ var Interest = (function () {
     return Interest;
 }());
 exports.Interest = Interest;
+var IntermediatePoints = (function () {
+    function IntermediatePoints() {
+    }
+    return IntermediatePoints;
+}());
+exports.IntermediatePoints = IntermediatePoints;
 var Intersection = (function () {
     function Intersection() {
     }
@@ -5189,7 +5193,7 @@ var PlacesServiceApi = (function () {
             });
         });
     };
-    PlacesServiceApi.prototype.getPOIsByAddress = function (address, country, name, type, categoryCode, sicCode, maxCandidates, searchRadius, searchRadiusUnit, travelTime, travelTimeUnit, travelDistance, travelDistanceUnit, travelMode, sortBy, fuzzyOnName, page) {
+    PlacesServiceApi.prototype.getPOIsByAddress = function (address, country, name, type, categoryCode, sicCode, maxCandidates, searchRadius, searchRadiusUnit, travelTime, travelTimeUnit, travelDistance, travelDistanceUnit, travelMode, sortBy, fuzzyOnName, page, matchMode, specificMatchOn) {
         var localVarPath = this.basePath + '/places/v1/poi/byaddress';
         var queryParameters = {};
         var headerParams = this.defaultHeaders;
@@ -5248,6 +5252,12 @@ var PlacesServiceApi = (function () {
         if (page !== undefined) {
             queryParameters['page'] = page;
         }
+        if (matchMode !== undefined) {
+            queryParameters['matchMode'] = matchMode;
+        }
+        if (specificMatchOn !== undefined) {
+            queryParameters['specificMatchOn'] = specificMatchOn;
+        }
         var useFormData = false;
         var requestOptions = {
             method: 'GET',
@@ -5282,7 +5292,7 @@ var PlacesServiceApi = (function () {
             });
         });
     };
-    PlacesServiceApi.prototype.getPOIsByArea = function (country, areaName3, postcode1, postcode2, name, type, categoryCode, sicCode, maxCandidates, fuzzyOnName, page) {
+    PlacesServiceApi.prototype.getPOIsByArea = function (country, areaName3, postcode1, postcode2, name, type, categoryCode, sicCode, maxCandidates, fuzzyOnName, page, matchMode, specificMatchOn) {
         var localVarPath = this.basePath + '/places/v1/poi/byarea';
         var queryParameters = {};
         var headerParams = this.defaultHeaders;
@@ -5322,6 +5332,12 @@ var PlacesServiceApi = (function () {
         }
         if (page !== undefined) {
             queryParameters['page'] = page;
+        }
+        if (matchMode !== undefined) {
+            queryParameters['matchMode'] = matchMode;
+        }
+        if (specificMatchOn !== undefined) {
+            queryParameters['specificMatchOn'] = specificMatchOn;
         }
         var useFormData = false;
         var requestOptions = {
@@ -5399,7 +5415,7 @@ var PlacesServiceApi = (function () {
             });
         });
     };
-    PlacesServiceApi.prototype.getPOIsByLocation = function (longitude, latitude, searchText, type, categoryCode, sicCode, maxCandidates, searchRadius, searchRadiusUnit, travelTime, travelTimeUnit, travelDistance, travelDistanceUnit, travelMode, sortBy, fuzzyOnName, page, searchOnNameOnly) {
+    PlacesServiceApi.prototype.getPOIsByLocation = function (longitude, latitude, searchText, type, categoryCode, sicCode, maxCandidates, searchRadius, searchRadiusUnit, travelTime, travelTimeUnit, travelDistance, travelDistanceUnit, travelMode, sortBy, fuzzyOnName, page, searchOnNameOnly, matchMode, specificMatchOn) {
         var localVarPath = this.basePath + '/places/v1/poi/bylocation';
         var queryParameters = {};
         var headerParams = this.defaultHeaders;
@@ -5463,6 +5479,12 @@ var PlacesServiceApi = (function () {
         }
         if (searchOnNameOnly !== undefined) {
             queryParameters['searchOnNameOnly'] = searchOnNameOnly;
+        }
+        if (matchMode !== undefined) {
+            queryParameters['matchMode'] = matchMode;
+        }
+        if (specificMatchOn !== undefined) {
+            queryParameters['specificMatchOn'] = specificMatchOn;
         }
         var useFormData = false;
         var requestOptions = {
@@ -5584,7 +5606,7 @@ var PlacesServiceApi = (function () {
             });
         });
     };
-    PlacesServiceApi.prototype.poisAutocomplete = function (longitude, latitude, searchText, searchRadius, searchRadiusUnit, travelTime, travelTimeUnit, travelDistance, travelDistanceUnit, travelMode, country, areaName1, areaName3, postcode1, postcode2, ipAddress, autoDetectLocation, type, categoryCode, sicCode, maxCandidates, sortBy, searchOnNameOnly) {
+    PlacesServiceApi.prototype.poisAutocomplete = function (longitude, latitude, searchText, searchRadius, searchRadiusUnit, travelTime, travelTimeUnit, travelDistance, travelDistanceUnit, travelMode, country, areaName1, areaName3, postcode1, postcode2, ipAddress, autoDetectLocation, type, categoryCode, sicCode, maxCandidates, sortBy, searchOnNameOnly, matchMode, specificMatchOn) {
         var localVarPath = this.basePath + '/places/v1/poi/autocomplete';
         var queryParameters = {};
         var headerParams = this.defaultHeaders;
@@ -5657,6 +5679,12 @@ var PlacesServiceApi = (function () {
         }
         if (searchOnNameOnly !== undefined) {
             queryParameters['searchOnNameOnly'] = searchOnNameOnly;
+        }
+        if (matchMode !== undefined) {
+            queryParameters['matchMode'] = matchMode;
+        }
+        if (specificMatchOn !== undefined) {
+            queryParameters['specificMatchOn'] = specificMatchOn;
         }
         var useFormData = false;
         var requestOptions = {
@@ -7172,7 +7200,7 @@ var RoutingServiceApi = (function () {
         enumerable: false,
         configurable: true
     });
-    RoutingServiceApi.prototype.getRouteByAddress = function (startAddress, endAddress, db, country, intermediateAddresses, oip, destinationSrs, optimizeBy, returnDistance, distanceUnit, returnTime, timeUnit, language, directionsStyle, segmentGeometryStyle, primaryNameOnly, majorRoads, historicTrafficTimeBucket, returnDirectionGeometry, useCvr, looseningBarrierRestrictions, vehicleType, weight, weightUnit, height, heightUnit, length, lengthUnit, width, widthUnit) {
+    RoutingServiceApi.prototype.getRouteByAddress = function (startAddress, endAddress, db, country, intermediateAddresses, oip, destinationSrs, optimizeBy, returnDistance, distanceUnit, returnTime, timeUnit, language, directionsStyle, segmentGeometryStyle, primaryNameOnly, majorRoads, historicTrafficTimeBucket, returnDirectionGeometry, useCvr, looseningBarrierRestrictions, vehicleType, weight, weightUnit, height, heightUnit, length, lengthUnit, width, widthUnit, returnIntermediatePoints) {
         var localVarPath = this.basePath + '/routing/v1/route/byaddress';
         var queryParameters = {};
         var headerParams = this.defaultHeaders;
@@ -7273,6 +7301,9 @@ var RoutingServiceApi = (function () {
         if (widthUnit !== undefined) {
             queryParameters['widthUnit'] = widthUnit;
         }
+        if (returnIntermediatePoints !== undefined) {
+            queryParameters['returnIntermediatePoints'] = returnIntermediatePoints;
+        }
         var useFormData = false;
         var requestOptions = {
             method: 'GET',
@@ -7307,7 +7338,7 @@ var RoutingServiceApi = (function () {
             });
         });
     };
-    RoutingServiceApi.prototype.getRouteByLocation = function (startPoint, endPoint, db, intermediatePoints, oip, destinationSrs, optimizeBy, returnDistance, distanceUnit, returnTime, timeUnit, language, directionsStyle, segmentGeometryStyle, primaryNameOnly, majorRoads, historicTrafficTimeBucket, returnDirectionGeometry, useCvr, looseningBarrierRestrictions, vehicleType, weight, weightUnit, height, heightUnit, length, lengthUnit, width, widthUnit) {
+    RoutingServiceApi.prototype.getRouteByLocation = function (startPoint, endPoint, db, intermediatePoints, oip, destinationSrs, optimizeBy, returnDistance, distanceUnit, returnTime, timeUnit, language, directionsStyle, segmentGeometryStyle, primaryNameOnly, majorRoads, historicTrafficTimeBucket, returnDirectionGeometry, useCvr, looseningBarrierRestrictions, vehicleType, weight, weightUnit, height, heightUnit, length, lengthUnit, width, widthUnit, returnIntermediatePoints) {
         var localVarPath = this.basePath + '/routing/v1/route/bylocation';
         var queryParameters = {};
         var headerParams = this.defaultHeaders;
@@ -7404,6 +7435,9 @@ var RoutingServiceApi = (function () {
         }
         if (widthUnit !== undefined) {
             queryParameters['widthUnit'] = widthUnit;
+        }
+        if (returnIntermediatePoints !== undefined) {
+            queryParameters['returnIntermediatePoints'] = returnIntermediatePoints;
         }
         var useFormData = false;
         var requestOptions = {
