@@ -8454,7 +8454,7 @@ var TypeaheadServiceApi = (function () {
         enumerable: false,
         configurable: true
     });
-    TypeaheadServiceApi.prototype.search = function (searchText, latitude, longitude, searchRadius, searchRadiusUnit, maxCandidates, country, matchOnAddressNumber, autoDetectLocation, ipAddress, areaName1, areaName3, postCode, returnAdminAreasOnly, includeRangesDetails, searchType) {
+    TypeaheadServiceApi.prototype.search = function (searchText, latitude, longitude, searchRadius, searchRadiusUnit, maxCandidates, country, matchOnAddressNumber, autoDetectLocation, ipAddress, areaName1, areaName3, postCode, returnAdminAreasOnly, includeRangesDetails, searchType, searchOnAddressNumber) {
         var localVarPath = this.basePath + '/typeahead/v1/locations';
         var queryParameters = {};
         var headerParams = this.defaultHeaders;
@@ -8509,6 +8509,9 @@ var TypeaheadServiceApi = (function () {
         }
         if (searchType !== undefined) {
             queryParameters['searchType'] = searchType;
+        }
+        if (searchOnAddressNumber !== undefined) {
+            queryParameters['searchOnAddressNumber'] = searchOnAddressNumber;
         }
         var useFormData = false;
         var requestOptions = {

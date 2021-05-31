@@ -3321,7 +3321,7 @@ export declare class TypeaheadServiceApi {
     set useQuerystring(value: boolean);
     setApiKey(key: TypeaheadServiceApiApiKeys, value: string): void;
     set accessToken(token: string);
-    search(searchText: string, latitude?: string, longitude?: string, searchRadius?: string, searchRadiusUnit?: string, maxCandidates?: string, country?: string, matchOnAddressNumber?: string, autoDetectLocation?: string, ipAddress?: string, areaName1?: string, areaName3?: string, postCode?: string, returnAdminAreasOnly?: string, includeRangesDetails?: string, searchType?: string): Promise<{
+    search(searchText: string, latitude?: string, longitude?: string, searchRadius?: string, searchRadiusUnit?: string, maxCandidates?: string, country?: string, matchOnAddressNumber?: string, autoDetectLocation?: string, ipAddress?: string, areaName1?: string, areaName3?: string, postCode?: string, returnAdminAreasOnly?: string, includeRangesDetails?: string, searchType?: string, searchOnAddressNumber?: string): Promise<{
         response: http.IncomingMessage;
         body: GeosearchLocations;
     }>;
