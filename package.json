@@ -1,24 +1,24 @@
 {
-    "name": "preciselyapis-client",
-    "version": "10.5.1",
-    "description": "NodeJS client for preciselyapis-client",
-    "repository": "GIT_USER_ID/GIT_REPO_ID",
-    "main": "api.js",
-    "scripts": {
-        "clean": "rm -Rf node_modules/ typings/ *.js",
-        "build": "tsc",
-        "test": "npm run build && node client.js"
-    },
-    "author": "Swagger Codegen Contributors",
-    "license": "Apache-2.0",
-    "dependencies": {
-        "@types/node": "^10.12.10",
-        "bluebird": "^3.3.5",
-        "request": "^2.72.0",
-        "moment": "^2.22.2"
-    },
-    "devDependencies": {
-        "typedoc": "^0.20.36",
-        "typescript": "^3.5.1"
-    }
+	"name": "preciselyapis-client",
+	"version": "11.0.0",
+	"description": "NodeJS client for preciselyapis-client",
+	"repository": "GIT_USER_ID/GIT_REPO_ID",
+	"main": "api.js",
+	"scripts": {
+		"clean": "rm -Rf node_modules/ typings/ *.js",
+		"build": "tsc",
+		"test": "npm run build && node client.js"
+	},
+	"author": "Swagger Codegen Contributors",
+	"license": "Apache-2.0",
+	"dependencies": {
+		"@types/node": "^10.12.10",
+		"bluebird": "^3.3.5",
+		"request": "^2.72.0",
+		"moment": "^2.22.2"
+	},
+	"devDependencies": {
+		"typedoc": "^0.20.36",
+		"typescript": "^3.5.1"
+	}
 }

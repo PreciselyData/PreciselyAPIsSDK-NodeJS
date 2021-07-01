@@ -120,6 +120,11 @@ export declare class AddressesDTO {
     'postCode': string;
     'postCodeExt': string;
     'country': string;
+    'geometry': CommonGeometry;
+    'propertyType': string;
+    'propertyTypeDescription': string;
+    'parentPbKey': string;
+    'geoId': string;
 }
 export declare class AddressesPreferences {
     'maxCandidates': string;
@@ -204,8 +209,16 @@ export declare class BufferRelation {
     'description': string;
     'value': string;
 }
+export declare class BuildingSqftSource {
+    'code': string;
+    'value': string;
+}
 export declare class BusinessId {
     'type': string;
+    'value': string;
+}
+export declare class CaExemptions {
+    'code': string;
     'value': string;
 }
 export declare class Candidate {
@@ -367,6 +380,10 @@ export declare class ConsistencyCode {
     'description': string;
     'value': string;
 }
+export declare class Construction {
+    'code': string;
+    'value': string;
+}
 export declare class ContactDetails {
     'address': MatchedAddress;
     'propertyAddress': MatchedAddress;
@@ -382,6 +399,10 @@ export declare class ContactPerson {
     'email': string;
     'comments': string;
     'additionalDetails': string;
+}
+export declare class CoolingType {
+    'code': string;
+    'value': string;
 }
 export declare class Cost {
     'cost': number;
@@ -659,6 +680,13 @@ export declare class End {
     'year': number;
     'month': number;
     'day': number;
+}
+export declare class ErrorCode {
+    'errorCode': string;
+    'errorDescription': string;
+}
+export declare class ErrorInfo {
+    'errors': Array<ErrorCode>;
 }
 export declare class EthnicityTheme {
     'boundaryRef': string;
@@ -1147,6 +1175,10 @@ export declare class HealthTheme {
     'individualValueVariable': Array<IndividualValueVariableV2>;
     'rangeVariable': Array<RangeVariableV2>;
 }
+export declare class HeatingType {
+    'code': string;
+    'value': string;
+}
 export declare class HouseholdSizeTheme {
     'boundaryRef': string;
     'individualValueVariable': Array<IndividualValueVariable>;
@@ -1286,6 +1318,10 @@ export declare class KeyLookupRequest {
 export declare class Keys {
     'objectId': string;
     'country': string;
+    'value': string;
+}
+export declare class LandUse {
+    'code': string;
     'value': string;
 }
 export declare class LatLongFields {
@@ -1642,6 +1678,51 @@ export declare class Profiles {
 export declare class Properties {
     'name': string;
 }
+export declare class PropertyAttributes {
+    'pbKey': string;
+    'propApn': string;
+    'propType': string;
+    'propSqFt': string;
+    'buildgSqFt': string;
+    'buildgSqSource': BuildingSqftSource;
+    'landUse': LandUse;
+    'construction': Construction;
+    'roofType': RoofType;
+    'subdivision': string;
+    'geometry': Geometry;
+    'builtYear': string;
+    'bedrooms': string;
+    'baths': string;
+    'pool': string;
+    'firePlace': string;
+    'mobileHome': string;
+    'heatingType': HeatingType;
+    'coolingType': CoolingType;
+    'assessedValue': string;
+    'marketValue': string;
+    'appraisedValue': string;
+    'taxAmount': string;
+    'taxExemptions': Array<TaxExemption>;
+    'caExemptions': CaExemptions;
+    'salesDate': string;
+    'priorSaleDate': string;
+    'priorSalesPrice': string;
+}
+export declare class PropertyInfoAddressRequest {
+    'preferences': PropertyInfoPreferences;
+    'addresses': Array<MatchedAddress>;
+}
+export declare class PropertyInfoPreferences {
+    'attributeFilter': string;
+}
+export declare class PropertyInfoResponse {
+    'objectId': string;
+    'propertyAttributes': PropertyAttributes;
+    'matchedAddress': MatchedAddress;
+}
+export declare class PropertyInfoResponses {
+    'propertyInfoResponses': Array<PropertyInfoResponse>;
+}
 export declare class Proxy {
     'anonymizerStatus': string;
     'level': string;
@@ -1754,6 +1835,10 @@ export declare class Road {
     'roadClass': string;
     'name': string;
     'type': string;
+}
+export declare class RoofType {
+    'code': string;
+    'value': string;
 }
 export declare class RouteBoundary {
     'id': string;
@@ -2036,6 +2121,10 @@ export declare class TaxDistrictResponse {
 }
 export declare class TaxDistrictResponseList {
     'taxDistrictResponse': Array<TaxDistrictResponse>;
+}
+export declare class TaxExemption {
+    'code': string;
+    'value': string;
 }
 export declare class TaxJurisdiction {
     'state': TaxState;
@@ -3077,6 +3166,14 @@ export declare class PropertyInformationServiceApi {
     getParcelBoundaryByLocation(longitude: string, latitude: string, accept?: string): Promise<{
         response: http.IncomingMessage;
         body: ParcelBoundary;
+    }>;
+    getPropertyAttributesByAddress(address?: string, attributeFilter?: string): Promise<{
+        response: http.IncomingMessage;
+        body: PropertyInfoResponse;
+    }>;
+    getPropertyAttributesByAddressBatch(body?: PropertyInfoAddressRequest): Promise<{
+        response: http.IncomingMessage;
+        body: PropertyInfoResponses;
     }>;
 }
 export declare enum RisksServiceApiApiKeys {
