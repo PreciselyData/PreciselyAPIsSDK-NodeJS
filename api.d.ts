@@ -939,18 +939,6 @@ export declare class GeoPostGeometry {
     'type': string;
     'coordinates': Array<Array<Array<Array<number>>>>;
 }
-export declare class GeoPropertyAddressRequest {
-    'addresses': Array<CommonAddress>;
-}
-export declare class GeoPropertyResponse {
-    'objectId': string;
-    'category': string;
-    'individualValueVariable': Array<IndividualValueVariable>;
-    'matchedAddress': MatchedAddress;
-}
-export declare class GeoPropertyResponses {
-    'propertyAttributes': Array<GeoPropertyResponse>;
-}
 export declare class GeoRiskBoundaries {
     'boundary': Array<CrimeBoundary>;
 }
@@ -3151,14 +3139,6 @@ export declare class PropertyInformationServiceApi {
     set useQuerystring(value: boolean);
     setApiKey(key: PropertyInformationServiceApiApiKeys, value: string): void;
     set accessToken(token: string);
-    getGeoPropertyByAddress(address: string): Promise<{
-        response: http.IncomingMessage;
-        body: GeoPropertyResponse;
-    }>;
-    getGeoPropertyByAddressBatch(body?: GeoPropertyAddressRequest): Promise<{
-        response: http.IncomingMessage;
-        body: GeoPropertyResponses;
-    }>;
     getParcelBoundaryByAddress(address: string, accept?: string): Promise<{
         response: http.IncomingMessage;
         body: ParcelBoundary;
