@@ -1692,6 +1692,7 @@ export declare class PropertyAttributes {
     'taxAmount': string;
     'taxExemptions': Array<TaxExemption>;
     'caExemptions': CaExemptions;
+    'stories': Stories;
     'salesDate': string;
     'priorSaleDate': string;
     'priorSalesPrice': string;
@@ -2038,6 +2039,10 @@ export declare class StartEndPoint {
 }
 export declare class Status {
     'code': string;
+    'description': string;
+}
+export declare class Stories {
+    'value': string;
     'description': string;
 }
 export declare class StudentEthnicity {
