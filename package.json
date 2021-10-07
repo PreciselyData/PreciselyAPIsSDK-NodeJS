@@ -1,6 +1,6 @@
 {
     "name": "preciselyapis-client",
-    "version": "11.0.2",
+    "version": "11.5.0",
     "description": "NodeJS client for preciselyapis-client",
     "repository": "GIT_USER_ID/GIT_REPO_ID",
     "main": "api.js",
@@ -18,7 +18,7 @@
         "moment": "^2.22.2"
     },
     "devDependencies": {
-        "typedoc": "^0.21.2",
-        "typescript": "^3.5.1"
+        "typescript": "^3.5.1",
+        "typedoc": "^0.21.2"
     }
 }
