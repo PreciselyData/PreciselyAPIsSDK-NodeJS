@@ -209,6 +209,15 @@ export declare class BufferRelation {
     'description': string;
     'value': string;
 }
+export declare class BuildgCondition {
+    'code': string;
+    'value': string;
+}
+export declare class BuildgFeaturesSqft {
+    'featureAreaSqft': string;
+    'areaIndicator': string;
+    'description': string;
+}
 export declare class BuildingSqftSource {
     'code': string;
     'value': string;
@@ -870,6 +879,10 @@ export declare class FloodZone {
     'primaryZone': PrimaryZone;
     'baseFloodElevation': BaseFloodElevation;
     'additionalInfo': string;
+}
+export declare class Foundation {
+    'code': string;
+    'value': string;
 }
 export declare class FreeOrReducedPriceLunches {
     'freeLunchesCount': string;
@@ -1696,6 +1709,13 @@ export declare class PropertyAttributes {
     'salesDate': string;
     'priorSaleDate': string;
     'priorSalesPrice': string;
+    'livingSqft': string;
+    'roofFrameType': RoofFrameType;
+    'foundation': Foundation;
+    'buildgCondition': BuildgCondition;
+    'buildgCount': string;
+    'buildgUnitNo': string;
+    'buildgFeaturesSqft': Array<BuildgFeaturesSqft>;
 }
 export declare class PropertyInfoAddressRequest {
     'preferences': PropertyInfoPreferences;
@@ -1824,6 +1844,10 @@ export declare class Road {
     'roadClass': string;
     'name': string;
     'type': string;
+}
+export declare class RoofFrameType {
+    'code': string;
+    'value': string;
 }
 export declare class RoofType {
     'code': string;
