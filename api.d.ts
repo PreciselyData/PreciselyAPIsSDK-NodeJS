@@ -47,6 +47,10 @@ export declare class AHJmailingAddress {
     'unitType': string;
     'unitValue': string;
 }
+export declare class AbsenteeOwner {
+    'code': string;
+    'value': string;
+}
 export declare class Accuracy {
     'unit': string;
     'value': string;
@@ -178,6 +182,10 @@ export declare class BaseFloodElevation {
     'unit': string;
     'value': string;
 }
+export declare class BasementType {
+    'code': string;
+    'value': string;
+}
 export declare class BasicBoundary {
     'center': BoundaryPoint;
     'geometry': PolygonGeometry;
@@ -217,6 +225,14 @@ export declare class BuildgFeaturesSqft {
     'featureAreaSqft': string;
     'areaIndicator': string;
     'description': string;
+}
+export declare class BuildgStyle {
+    'code': string;
+    'value': string;
+}
+export declare class BuildgType {
+    'code': string;
+    'value': string;
 }
 export declare class BuildingSqftSource {
     'code': string;
@@ -726,6 +742,10 @@ export declare class ExpenditureTheme {
     'individualValueVariable': Array<IndividualValueVariableV2>;
     'rangeVariable': Array<RangeVariableV2>;
 }
+export declare class ExteriorWalls {
+    'code': string;
+    'value': string;
+}
 export declare class Field {
     'value': string;
     'description': string;
@@ -888,6 +908,10 @@ export declare class FreeOrReducedPriceLunches {
     'freeLunchesCount': string;
     'reducedPriceLunchedCount': string;
     'totalCount': string;
+}
+export declare class GarageType {
+    'code': string;
+    'value': string;
 }
 export declare class GenderTheme {
     'boundaryRef': string;
@@ -1425,6 +1449,11 @@ export declare class OutputParameter {
     'description': string;
     'type': string;
 }
+export declare class Owners {
+    'firstName': string;
+    'middleName': string;
+    'lastName': string;
+}
 export declare class PBKeyAddressRequest {
     'addresses': Array<CommonAddress>;
 }
@@ -1688,7 +1717,7 @@ export declare class PropertyAttributes {
     'buildgSqSource': BuildingSqftSource;
     'landUse': LandUse;
     'construction': Construction;
-    'roofType': RoofType;
+    'roofCoverType': RoofCoverType;
     'subdivision': string;
     'geometry': Geometry;
     'builtYear': string;
@@ -1716,13 +1745,32 @@ export declare class PropertyAttributes {
     'buildgCount': string;
     'buildgUnitNo': string;
     'buildgFeaturesSqft': Array<BuildgFeaturesSqft>;
+    'businessName': string;
+    'taxAddress': string;
+    'vacancy': Vacancy;
+    'owners': Array<Owners>;
+    'appraisedValueImp': string;
+    'assessedValueImp': string;
+    'buildgType': BuildgType;
+    'basementType': BasementType;
+    'effectiveBuiltYear': string;
+    'exteriorWalls': ExteriorWalls;
+    'garageType': GarageType;
+    'lastUpdated': string;
+    'marketValueImp': string;
+    'absenteeOwner': AbsenteeOwner;
+    'parkingSqFt': string;
+    'replacementCost': string;
+    'roofShapeType': RoofShapeType;
+    'buildgStyle': BuildgStyle;
+    'basementSqFt': string;
 }
 export declare class PropertyInfoAddressRequest {
     'preferences': PropertyInfoPreferences;
     'addresses': Array<MatchedAddress>;
 }
 export declare class PropertyInfoPreferences {
-    'attributeFilter': string;
+    'attributes': string;
 }
 export declare class PropertyInfoResponse {
     'objectId': string;
@@ -1845,7 +1893,15 @@ export declare class Road {
     'name': string;
     'type': string;
 }
+export declare class RoofCoverType {
+    'code': string;
+    'value': string;
+}
 export declare class RoofFrameType {
+    'code': string;
+    'value': string;
+}
+export declare class RoofShapeType {
     'code': string;
     'value': string;
 }
@@ -2326,6 +2382,10 @@ export declare class UseTaxRate {
     'countyTaxRate': number;
     'municipalTaxRate': number;
     'spdsTax': Array<SpecialPurposeDistrictTaxRate>;
+}
+export declare class Vacancy {
+    'code': string;
+    'value': string;
 }
 export declare class ValidateEmailAddressAPIRequest {
     'options': ValidateEmailAddressOptions;
@@ -3176,7 +3236,7 @@ export declare class PropertyInformationServiceApi {
         response: http.IncomingMessage;
         body: ParcelBoundary;
     }>;
-    getPropertyAttributesByAddress(address?: string, attributeFilter?: string): Promise<{
+    getPropertyAttributesByAddress(address?: string, attributes?: string): Promise<{
         response: http.IncomingMessage;
         body: PropertyInfoResponse;
     }>;
