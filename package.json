@@ -1,6 +1,6 @@
 {
     "name": "preciselyapis-client",
-    "version": "11.7.0",
+    "version": "11.8.0",
     "description": "NodeJS client for preciselyapis-client",
     "repository": "GIT_USER_ID/GIT_REPO_ID",
     "main": "api.js",
@@ -15,7 +15,8 @@
         "@types/node": "^10.12.10",
         "bluebird": "^3.3.5",
         "request": "^2.72.0",
-        "moment": "^2.22.2"
+        "moment": "^2.22.2",
+        "jsonschema": "0.4.0"
     },
     "devDependencies": {
         "typescript": "^3.5.1",

@@ -226,6 +226,10 @@ export declare class BuildgFeaturesSqft {
     'areaIndicator': string;
     'description': string;
 }
+export declare class BuildgSqFtSource {
+    'code': string;
+    'value': string;
+}
 export declare class BuildgStyle {
     'code': string;
     'value': string;
@@ -1714,7 +1718,7 @@ export declare class PropertyAttributes {
     'propType': string;
     'propSqFt': string;
     'buildgSqFt': string;
-    'buildgSqSource': BuildingSqftSource;
+    'buildgSqFtSource': BuildingSqftSource;
     'landUse': LandUse;
     'construction': Construction;
     'roofCoverType': RoofCoverType;
@@ -1724,7 +1728,7 @@ export declare class PropertyAttributes {
     'bedrooms': string;
     'baths': string;
     'pool': string;
-    'firePlace': string;
+    'fireplace': string;
     'mobileHome': string;
     'heatingType': HeatingType;
     'coolingType': CoolingType;
@@ -1734,17 +1738,17 @@ export declare class PropertyAttributes {
     'taxAmount': string;
     'taxExemptions': Array<TaxExemption>;
     'caExemptions': CaExemptions;
-    'stories': Stories;
     'salesDate': string;
     'priorSaleDate': string;
     'priorSalesPrice': string;
-    'livingSqft': string;
+    'stories': Stories;
+    'livingSqFt': string;
     'roofFrameType': RoofFrameType;
     'foundation': Foundation;
     'buildgCondition': BuildgCondition;
     'buildgCount': string;
     'buildgUnitNo': string;
-    'buildgFeaturesSqft': Array<BuildgFeaturesSqft>;
+    'buildgFeaturesSqFt': Array<BuildgFeaturesSqft>;
     'businessName': string;
     'taxAddress': string;
     'vacancy': Vacancy;
