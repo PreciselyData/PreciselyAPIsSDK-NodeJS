@@ -4,16 +4,21 @@
         "noImplicitAny": false,
         "suppressImplicitAnyIndexErrors": true,
         "target": "ES5",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "moduleResolution": "node",
         "removeComments": true,
         "sourceMap": true,
         "noLib": false,
-        "declaration": true
+        "declaration": true,
+        "lib": ["dom", "es6", "es5", "dom.iterable", "scripthost"],
+        "outDir": "dist",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
     },
     "exclude": [
-        "node_modules",
-        "typings/browser",
-        "typings/browser.d.ts"
+        "dist",
+        "node_modules"
     ]
 }
-

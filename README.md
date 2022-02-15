@@ -35,7 +35,6 @@
 
 * [Geolocation](https://developer.precisely.com/apis/geolocation): Device Location. The Geolocation API returns location coordinates based on the input of an IP Address or Wi-Fi Access point MAC address. Useful for a variety of applications, business processes and workflows in eCommerce, Fraud Detection, Physical-Digital interactions, Field Service and more.
 
-* [Identity Profiles](https://developer.precisely.com/apis/identityprofiles): Rich Identity Profiles. Powerful, local socio-economic & affinity insights about your customer. Enrich shipping addresses with rich, localized Identity profiles, demographics, lifestyle segmentations, neighborhood names, property ownership & values, and social affinity insights. The Identity Profiles API returns all these data with the input of a Physical Address, Email Address, or Twitter handle. Useful for enhancing & enriching a wide variety of applications, business processes, or workflows.
 
 * [Schools](https://developer.precisely.com/apis/schools): School Listings. Gather local multiple school listings, types, districts and education levels for your applications. The Schools API accepts multiple powerful inputs & geographic filtering options and returns nearby school listings and additional data a single API request. Useful for enriching your applications and websites.
 
@@ -118,9 +117,9 @@ try     {
     oAuth.getOAuthCredentials().then((data) => {
 
 
-        var _911PSAPServiceApi = new PreciselyAPINodeJS._911PSAPServiceApi(data.body);
+        var _PSAP911ServiceApi = new PreciselyAPINodeJS.PSAP911ServiceApi(data.body);
 		
-        _911PSAPServiceApi.getAHJPlusPSAPByAddress("950 Josephine Street Denver CO 80204").then((response) => {
+        _PSAP911ServiceApi.getAHJPlusPSAPByAddress("950 Josephine Street Denver CO 80204").then((response) => {
             console.log("Result " + JSON.stringify(response.body));
         }).catch((response) => {
             console.log("Error " + JSON.stringify(response.body));
