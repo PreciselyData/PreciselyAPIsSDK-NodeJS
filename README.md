@@ -9,7 +9,7 @@
 
 * [Geocode](https://developer.precisely.com/apis/geocode): Accurate Geocoding. Convert individual or batch collections of addresses to latitude & longitude coordinates and vice versa. Useful for enhancing & enriching your customer addresses.
 
-* [Address Autocomplete](https://developer.precisely.com/apis/typeahead): Address Autocomplete. Build Address Autocomplete into your websites. The Address Autocomplete API returns an autocompleted list of addresses based on the input of a partial address. Useful for any local search, checkout, shipping, or billing experiences on your website. Increase e-commerce conversion by 3-6%!
+* [Typeahead](https://developer.precisely.com/apis/typeahead): Address Autocomplete. Build Address typeahead into your websites. The Typeahead API returns an autocompleted list of addresses based on the input of a partial address. Useful for any local search, checkout, shipping, or billing experiences on your website. Increase e-commerce conversion by 3-6%!
 
 * [Maps](https://developer.precisely.com/apis/maps): Beautiful Visualization. Add your data and/or Precisely data atop beautiful maps for visualizations. Choose from three map styles - Bronze, Iron, and Steel.
 
@@ -55,8 +55,7 @@ The following platforms are supported by Precisely SDKs:
 *	[NodeJS]() 
 *	[iOS](https://developer.precisely.com/apis/docs/index.html#iOS%20SDK/ios_intro.html)
 *	[Java](https://developer.precisely.com/apis/docs/index.html#Java%20SDK/java_intro.html)
-*	[C#](https://developer.precisely.com/apis/docs/index.html#C_sdk/java_intro.html)
-*   Python  
+*	[C#](https://developer.precisely.com/apis/docs/index.html#C_sdk/java_intro.html)  
 
 [Click here](https://developer.precisely.com/apis/docs/index.html) for detailed Documentation on Precisely APIs 
 

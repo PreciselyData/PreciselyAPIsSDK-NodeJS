@@ -1,5 +1,3 @@
-export * from './addressAutocompleteServiceApi';
-import { AddressAutocompleteServiceApi } from './addressAutocompleteServiceApi';
 export * from './addressVerificationServiceApi';
 import { AddressVerificationServiceApi } from './addressVerificationServiceApi';
 export * from './addressesServiceApi';
@@ -36,6 +34,8 @@ export * from './telecommInfoServiceApi';
 import { TelecommInfoServiceApi } from './telecommInfoServiceApi';
 export * from './timeZoneServiceApi';
 import { TimeZoneServiceApi } from './timeZoneServiceApi';
+export * from './typeaheadServiceApi';
+import { TypeaheadServiceApi } from './typeaheadServiceApi';
 export * from './zonesServiceApi';
 import { ZonesServiceApi } from './zonesServiceApi';
 import * as http from 'http';
@@ -49,4 +49,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [AddressAutocompleteServiceApi, AddressVerificationServiceApi, AddressesServiceApi, DemographicsServiceApi, EmailVerificationServiceApi, GeocodeServiceApi, GeolocationServiceApi, LocalTaxServiceApi, NeighborhoodsServiceApi, PSAP911ServiceApi, PhoneVerificationServiceApi, PlacesServiceApi, PropertyInformationServiceApi, RisksServiceApi, RoutingServiceApi, SchoolsServiceApi, StreetsServiceApi, TelecommInfoServiceApi, TimeZoneServiceApi, ZonesServiceApi];
+export const APIS = [AddressVerificationServiceApi, AddressesServiceApi, DemographicsServiceApi, EmailVerificationServiceApi, GeocodeServiceApi, GeolocationServiceApi, LocalTaxServiceApi, NeighborhoodsServiceApi, PSAP911ServiceApi, PhoneVerificationServiceApi, PlacesServiceApi, PropertyInformationServiceApi, RisksServiceApi, RoutingServiceApi, SchoolsServiceApi, StreetsServiceApi, TelecommInfoServiceApi, TimeZoneServiceApi, TypeaheadServiceApi, ZonesServiceApi];
