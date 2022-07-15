@@ -197,8 +197,6 @@ export * from './pOIBoundaryPreferences';
 export * from './pOIBoundaryResponse';
 export * from './pOIByGeometryRequest';
 export * from './pSAPResponse';
-export * from './parcel';
-export * from './parcelBoundary';
 export * from './parentBusiness';
 export * from './pbkey';
 export * from './phoneVerification';
@@ -220,8 +218,6 @@ export * from './propertyInfoAddressRequest';
 export * from './propertyInfoPreferences';
 export * from './propertyInfoResponse';
 export * from './propertyInfoResponses';
-export * from './propertyInformationGeometry';
-export * from './propertyInformationGeometryCRC';
 export * from './proxy';
 export * from './raceAndEthnicityTheme';
 export * from './rangeVariable';
@@ -559,8 +555,6 @@ import { POIBoundaryPreferences } from './pOIBoundaryPreferences';
 import { POIBoundaryResponse } from './pOIBoundaryResponse';
 import { POIByGeometryRequest } from './pOIByGeometryRequest';
 import { PSAPResponse } from './pSAPResponse';
-import { Parcel } from './parcel';
-import { ParcelBoundary } from './parcelBoundary';
 import { ParentBusiness } from './parentBusiness';
 import { Pbkey } from './pbkey';
 import { PhoneVerification } from './phoneVerification';
@@ -582,8 +576,6 @@ import { PropertyInfoAddressRequest } from './propertyInfoAddressRequest';
 import { PropertyInfoPreferences } from './propertyInfoPreferences';
 import { PropertyInfoResponse } from './propertyInfoResponse';
 import { PropertyInfoResponses } from './propertyInfoResponses';
-import { PropertyInformationGeometry } from './propertyInformationGeometry';
-import { PropertyInformationGeometryCRC } from './propertyInformationGeometryCRC';
 import { Proxy } from './proxy';
 import { RaceAndEthnicityTheme } from './raceAndEthnicityTheme';
 import { RangeVariable } from './rangeVariable';
@@ -916,8 +908,6 @@ let typeMap: {[index: string]: any} = {
     "POIBoundaryResponse": POIBoundaryResponse,
     "POIByGeometryRequest": POIByGeometryRequest,
     "PSAPResponse": PSAPResponse,
-    "Parcel": Parcel,
-    "ParcelBoundary": ParcelBoundary,
     "ParentBusiness": ParentBusiness,
     "Pbkey": Pbkey,
     "PhoneVerification": PhoneVerification,
@@ -939,8 +929,6 @@ let typeMap: {[index: string]: any} = {
     "PropertyInfoPreferences": PropertyInfoPreferences,
     "PropertyInfoResponse": PropertyInfoResponse,
     "PropertyInfoResponses": PropertyInfoResponses,
-    "PropertyInformationGeometry": PropertyInformationGeometry,
-    "PropertyInformationGeometryCRC": PropertyInformationGeometryCRC,
     "Proxy": Proxy,
     "RaceAndEthnicityTheme": RaceAndEthnicityTheme,
     "RangeVariable": RangeVariable,
