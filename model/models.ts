@@ -17,6 +17,7 @@ export * from './addressesCount';
 export * from './addressesDTO';
 export * from './addressesPreferences';
 export * from './addressesResponse';
+export * from './amenities';
 export * from './area';
 export * from './areaCodeInfo';
 export * from './assetsAndWealthTheme';
@@ -28,10 +29,15 @@ export * from './boundary';
 export * from './boundaryBuffer';
 export * from './boundaryPoint';
 export * from './bufferRelation';
+export * from './buildgClass';
 export * from './buildgCondition';
 export * from './buildgFeaturesSqft';
+export * from './buildgImprovArea';
+export * from './buildgImproveType';
+export * from './buildgQuality';
 export * from './buildgStyle';
 export * from './buildgType';
+export * from './buildgView';
 export * from './buildingSqftSource';
 export * from './businessId';
 export * from './caExemptions';
@@ -91,11 +97,13 @@ export * from './earthquakeRiskResponseList';
 export * from './educationTheme';
 export * from './employeeCount';
 export * from './employmentTheme';
+export * from './energyType';
 export * from './errorCode';
 export * from './errorInfo';
 export * from './eventsCount';
 export * from './expenditureTheme';
 export * from './exteriorWalls';
+export * from './extraFeatureSqft';
 export * from './field';
 export * from './fieldsMatching';
 export * from './fireDepartment';
@@ -110,6 +118,7 @@ export * from './fireShed';
 export * from './fireStation';
 export * from './fireStationContactDetails';
 export * from './fireStations';
+export * from './fireplaceType';
 export * from './floodHazardPreferences';
 export * from './floodRiskByAddressRequest';
 export * from './floodRiskByLocationRequest';
@@ -117,8 +126,11 @@ export * from './floodRiskPreferences';
 export * from './floodRiskResponse';
 export * from './floodRiskResponseList';
 export * from './floodZone';
+export * from './floorType';
+export * from './formattedTaxAddress';
 export * from './foundation';
 export * from './freeOrReducedPriceLunches';
+export * from './fuelType';
 export * from './garageType';
 export * from './geoLocationAccessPoint';
 export * from './geoLocationCountry';
@@ -162,6 +174,7 @@ export * from './iPDTaxJurisdiction';
 export * from './incomeTheme';
 export * from './indexVariable';
 export * from './individualValueVariable';
+export * from './interiorWall';
 export * from './intermediatePoints';
 export * from './intersection';
 export * from './intersectionResponse';
@@ -172,6 +185,7 @@ export * from './keys';
 export * from './landUse';
 export * from './latLongFields';
 export * from './lifeStyleTheme';
+export * from './locCode';
 export * from './localTaxGeometry';
 export * from './localTaxPreferences';
 export * from './location';
@@ -186,6 +200,8 @@ export * from './name';
 export * from './neighborhoodsResponse';
 export * from './network';
 export * from './organizationType';
+export * from './otherRooms';
+export * from './ownerVestType';
 export * from './owners';
 export * from './pBKeyAddressRequest';
 export * from './pBKeyResponse';
@@ -208,9 +224,12 @@ export * from './poiClassification';
 export * from './poiCount';
 export * from './poiCountRequest';
 export * from './points';
+export * from './poolType';
 export * from './populationTheme';
 export * from './preferencTimeZone';
 export * from './primaryZone';
+export * from './priorSaleCode';
+export * from './propSiteInfluene';
 export * from './properties';
 export * from './propertyAttributes';
 export * from './propertyGeometry';
@@ -253,6 +272,7 @@ export * from './shoreLineDistance';
 export * from './sic';
 export * from './sicMetadata';
 export * from './siteDetails';
+export * from './situsAddress';
 export * from './specialPurposeDistrict';
 export * from './specialPurposeDistrictTax';
 export * from './speedLimit';
@@ -267,6 +287,7 @@ export * from './taxAddressRequest';
 export * from './taxCounty';
 export * from './taxDistrictResponse';
 export * from './taxDistrictResponseList';
+export * from './taxDocType';
 export * from './taxExemption';
 export * from './taxGeometry';
 export * from './taxJurisdiction';
@@ -279,6 +300,7 @@ export * from './taxRateLocationRequest';
 export * from './taxRateMatchedAddress';
 export * from './taxRateResponse';
 export * from './taxResponses';
+export * from './taxSalesPriceCode';
 export * from './taxState';
 export * from './time';
 export * from './timezoneAddressRequest';
@@ -375,6 +397,7 @@ import { AddressesCount } from './addressesCount';
 import { AddressesDTO } from './addressesDTO';
 import { AddressesPreferences } from './addressesPreferences';
 import { AddressesResponse } from './addressesResponse';
+import { Amenities } from './amenities';
 import { Area } from './area';
 import { AreaCodeInfo } from './areaCodeInfo';
 import { AssetsAndWealthTheme } from './assetsAndWealthTheme';
@@ -386,10 +409,15 @@ import { Boundary } from './boundary';
 import { BoundaryBuffer } from './boundaryBuffer';
 import { BoundaryPoint } from './boundaryPoint';
 import { BufferRelation } from './bufferRelation';
+import { BuildgClass } from './buildgClass';
 import { BuildgCondition } from './buildgCondition';
 import { BuildgFeaturesSqft } from './buildgFeaturesSqft';
+import { BuildgImprovArea } from './buildgImprovArea';
+import { BuildgImproveType } from './buildgImproveType';
+import { BuildgQuality } from './buildgQuality';
 import { BuildgStyle } from './buildgStyle';
 import { BuildgType } from './buildgType';
+import { BuildgView } from './buildgView';
 import { BuildingSqftSource } from './buildingSqftSource';
 import { BusinessId } from './businessId';
 import { CaExemptions } from './caExemptions';
@@ -449,11 +477,13 @@ import { EarthquakeRiskResponseList } from './earthquakeRiskResponseList';
 import { EducationTheme } from './educationTheme';
 import { EmployeeCount } from './employeeCount';
 import { EmploymentTheme } from './employmentTheme';
+import { EnergyType } from './energyType';
 import { ErrorCode } from './errorCode';
 import { ErrorInfo } from './errorInfo';
 import { EventsCount } from './eventsCount';
 import { ExpenditureTheme } from './expenditureTheme';
 import { ExteriorWalls } from './exteriorWalls';
+import { ExtraFeatureSqft } from './extraFeatureSqft';
 import { Field } from './field';
 import { FieldsMatching } from './fieldsMatching';
 import { FireDepartment } from './fireDepartment';
@@ -468,6 +498,7 @@ import { FireShed } from './fireShed';
 import { FireStation } from './fireStation';
 import { FireStationContactDetails } from './fireStationContactDetails';
 import { FireStations } from './fireStations';
+import { FireplaceType } from './fireplaceType';
 import { FloodHazardPreferences } from './floodHazardPreferences';
 import { FloodRiskByAddressRequest } from './floodRiskByAddressRequest';
 import { FloodRiskByLocationRequest } from './floodRiskByLocationRequest';
@@ -475,8 +506,11 @@ import { FloodRiskPreferences } from './floodRiskPreferences';
 import { FloodRiskResponse } from './floodRiskResponse';
 import { FloodRiskResponseList } from './floodRiskResponseList';
 import { FloodZone } from './floodZone';
+import { FloorType } from './floorType';
+import { FormattedTaxAddress } from './formattedTaxAddress';
 import { Foundation } from './foundation';
 import { FreeOrReducedPriceLunches } from './freeOrReducedPriceLunches';
+import { FuelType } from './fuelType';
 import { GarageType } from './garageType';
 import { GeoLocationAccessPoint } from './geoLocationAccessPoint';
 import { GeoLocationCountry } from './geoLocationCountry';
@@ -520,6 +554,7 @@ import { IPDTaxJurisdiction } from './iPDTaxJurisdiction';
 import { IncomeTheme } from './incomeTheme';
 import { IndexVariable } from './indexVariable';
 import { IndividualValueVariable } from './individualValueVariable';
+import { InteriorWall } from './interiorWall';
 import { IntermediatePoints } from './intermediatePoints';
 import { Intersection } from './intersection';
 import { IntersectionResponse } from './intersectionResponse';
@@ -530,6 +565,7 @@ import { Keys } from './keys';
 import { LandUse } from './landUse';
 import { LatLongFields } from './latLongFields';
 import { LifeStyleTheme } from './lifeStyleTheme';
+import { LocCode } from './locCode';
 import { LocalTaxGeometry } from './localTaxGeometry';
 import { LocalTaxPreferences } from './localTaxPreferences';
 import { Location } from './location';
@@ -544,6 +580,8 @@ import { Name } from './name';
 import { NeighborhoodsResponse } from './neighborhoodsResponse';
 import { Network } from './network';
 import { OrganizationType } from './organizationType';
+import { OtherRooms } from './otherRooms';
+import { OwnerVestType } from './ownerVestType';
 import { Owners } from './owners';
 import { PBKeyAddressRequest } from './pBKeyAddressRequest';
 import { PBKeyResponse } from './pBKeyResponse';
@@ -566,9 +604,12 @@ import { PoiClassification } from './poiClassification';
 import { PoiCount } from './poiCount';
 import { PoiCountRequest } from './poiCountRequest';
 import { Points } from './points';
+import { PoolType } from './poolType';
 import { PopulationTheme } from './populationTheme';
 import { PreferencTimeZone } from './preferencTimeZone';
 import { PrimaryZone } from './primaryZone';
+import { PriorSaleCode } from './priorSaleCode';
+import { PropSiteInfluene } from './propSiteInfluene';
 import { Properties } from './properties';
 import { PropertyAttributes } from './propertyAttributes';
 import { PropertyGeometry } from './propertyGeometry';
@@ -611,6 +652,7 @@ import { ShoreLineDistance } from './shoreLineDistance';
 import { Sic } from './sic';
 import { SicMetadata } from './sicMetadata';
 import { SiteDetails } from './siteDetails';
+import { SitusAddress } from './situsAddress';
 import { SpecialPurposeDistrict } from './specialPurposeDistrict';
 import { SpecialPurposeDistrictTax } from './specialPurposeDistrictTax';
 import { SpeedLimit } from './speedLimit';
@@ -625,6 +667,7 @@ import { TaxAddressRequest } from './taxAddressRequest';
 import { TaxCounty } from './taxCounty';
 import { TaxDistrictResponse } from './taxDistrictResponse';
 import { TaxDistrictResponseList } from './taxDistrictResponseList';
+import { TaxDocType } from './taxDocType';
 import { TaxExemption } from './taxExemption';
 import { TaxGeometry } from './taxGeometry';
 import { TaxJurisdiction } from './taxJurisdiction';
@@ -637,6 +680,7 @@ import { TaxRateLocationRequest } from './taxRateLocationRequest';
 import { TaxRateMatchedAddress } from './taxRateMatchedAddress';
 import { TaxRateResponse } from './taxRateResponse';
 import { TaxResponses } from './taxResponses';
+import { TaxSalesPriceCode } from './taxSalesPriceCode';
 import { TaxState } from './taxState';
 import { Time } from './time';
 import { TimezoneAddressRequest } from './timezoneAddressRequest';
@@ -728,6 +772,7 @@ let typeMap: {[index: string]: any} = {
     "AddressesDTO": AddressesDTO,
     "AddressesPreferences": AddressesPreferences,
     "AddressesResponse": AddressesResponse,
+    "Amenities": Amenities,
     "Area": Area,
     "AreaCodeInfo": AreaCodeInfo,
     "AssetsAndWealthTheme": AssetsAndWealthTheme,
@@ -739,10 +784,15 @@ let typeMap: {[index: string]: any} = {
     "BoundaryBuffer": BoundaryBuffer,
     "BoundaryPoint": BoundaryPoint,
     "BufferRelation": BufferRelation,
+    "BuildgClass": BuildgClass,
     "BuildgCondition": BuildgCondition,
     "BuildgFeaturesSqft": BuildgFeaturesSqft,
+    "BuildgImprovArea": BuildgImprovArea,
+    "BuildgImproveType": BuildgImproveType,
+    "BuildgQuality": BuildgQuality,
     "BuildgStyle": BuildgStyle,
     "BuildgType": BuildgType,
+    "BuildgView": BuildgView,
     "BuildingSqftSource": BuildingSqftSource,
     "BusinessId": BusinessId,
     "CaExemptions": CaExemptions,
@@ -802,11 +852,13 @@ let typeMap: {[index: string]: any} = {
     "EducationTheme": EducationTheme,
     "EmployeeCount": EmployeeCount,
     "EmploymentTheme": EmploymentTheme,
+    "EnergyType": EnergyType,
     "ErrorCode": ErrorCode,
     "ErrorInfo": ErrorInfo,
     "EventsCount": EventsCount,
     "ExpenditureTheme": ExpenditureTheme,
     "ExteriorWalls": ExteriorWalls,
+    "ExtraFeatureSqft": ExtraFeatureSqft,
     "Field": Field,
     "FieldsMatching": FieldsMatching,
     "FireDepartment": FireDepartment,
@@ -821,6 +873,7 @@ let typeMap: {[index: string]: any} = {
     "FireStation": FireStation,
     "FireStationContactDetails": FireStationContactDetails,
     "FireStations": FireStations,
+    "FireplaceType": FireplaceType,
     "FloodHazardPreferences": FloodHazardPreferences,
     "FloodRiskByAddressRequest": FloodRiskByAddressRequest,
     "FloodRiskByLocationRequest": FloodRiskByLocationRequest,
@@ -828,8 +881,11 @@ let typeMap: {[index: string]: any} = {
     "FloodRiskResponse": FloodRiskResponse,
     "FloodRiskResponseList": FloodRiskResponseList,
     "FloodZone": FloodZone,
+    "FloorType": FloorType,
+    "FormattedTaxAddress": FormattedTaxAddress,
     "Foundation": Foundation,
     "FreeOrReducedPriceLunches": FreeOrReducedPriceLunches,
+    "FuelType": FuelType,
     "GarageType": GarageType,
     "GeoLocationAccessPoint": GeoLocationAccessPoint,
     "GeoLocationCountry": GeoLocationCountry,
@@ -873,6 +929,7 @@ let typeMap: {[index: string]: any} = {
     "IncomeTheme": IncomeTheme,
     "IndexVariable": IndexVariable,
     "IndividualValueVariable": IndividualValueVariable,
+    "InteriorWall": InteriorWall,
     "IntermediatePoints": IntermediatePoints,
     "Intersection": Intersection,
     "IntersectionResponse": IntersectionResponse,
@@ -883,6 +940,7 @@ let typeMap: {[index: string]: any} = {
     "LandUse": LandUse,
     "LatLongFields": LatLongFields,
     "LifeStyleTheme": LifeStyleTheme,
+    "LocCode": LocCode,
     "LocalTaxGeometry": LocalTaxGeometry,
     "LocalTaxPreferences": LocalTaxPreferences,
     "Location": Location,
@@ -897,6 +955,8 @@ let typeMap: {[index: string]: any} = {
     "NeighborhoodsResponse": NeighborhoodsResponse,
     "Network": Network,
     "OrganizationType": OrganizationType,
+    "OtherRooms": OtherRooms,
+    "OwnerVestType": OwnerVestType,
     "Owners": Owners,
     "PBKeyAddressRequest": PBKeyAddressRequest,
     "PBKeyResponse": PBKeyResponse,
@@ -919,9 +979,12 @@ let typeMap: {[index: string]: any} = {
     "PoiCount": PoiCount,
     "PoiCountRequest": PoiCountRequest,
     "Points": Points,
+    "PoolType": PoolType,
     "PopulationTheme": PopulationTheme,
     "PreferencTimeZone": PreferencTimeZone,
     "PrimaryZone": PrimaryZone,
+    "PriorSaleCode": PriorSaleCode,
+    "PropSiteInfluene": PropSiteInfluene,
     "Properties": Properties,
     "PropertyAttributes": PropertyAttributes,
     "PropertyGeometry": PropertyGeometry,
@@ -964,6 +1027,7 @@ let typeMap: {[index: string]: any} = {
     "Sic": Sic,
     "SicMetadata": SicMetadata,
     "SiteDetails": SiteDetails,
+    "SitusAddress": SitusAddress,
     "SpecialPurposeDistrict": SpecialPurposeDistrict,
     "SpecialPurposeDistrictTax": SpecialPurposeDistrictTax,
     "SpeedLimit": SpeedLimit,
@@ -978,6 +1042,7 @@ let typeMap: {[index: string]: any} = {
     "TaxCounty": TaxCounty,
     "TaxDistrictResponse": TaxDistrictResponse,
     "TaxDistrictResponseList": TaxDistrictResponseList,
+    "TaxDocType": TaxDocType,
     "TaxExemption": TaxExemption,
     "TaxGeometry": TaxGeometry,
     "TaxJurisdiction": TaxJurisdiction,
@@ -990,6 +1055,7 @@ let typeMap: {[index: string]: any} = {
     "TaxRateMatchedAddress": TaxRateMatchedAddress,
     "TaxRateResponse": TaxRateResponse,
     "TaxResponses": TaxResponses,
+    "TaxSalesPriceCode": TaxSalesPriceCode,
     "TaxState": TaxState,
     "Time": Time,
     "TimezoneAddressRequest": TimezoneAddressRequest,

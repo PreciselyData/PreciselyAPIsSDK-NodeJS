@@ -56,7 +56,7 @@ The following platforms are supported by Precisely SDKs:
 *	[iOS](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/iOS%20SDK/ios_intro.html)
 *	[Java](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/Java%20SDK/java_intro.html)
 *	[C#](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/C_sdk/java_intro.html)
-*   Python  
+*   [Python ](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/Python%20SDK/PythonSdk.html) 
 
 
 [Click here](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/About%20Document/about_this_doc.html) for detailed Documentation on Precisely APIs 
