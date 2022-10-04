@@ -1,6 +1,6 @@
 {
     "name": "preciselyapis-client",
-    "version": "12.0.0",
+    "version": "12.0.1",
     "description": "NodeJS client for preciselyapis-client",
     "repository": "PreciselyData/PreciselyAPIsSDK-NodeJS",
     "main": "dist/api.js",

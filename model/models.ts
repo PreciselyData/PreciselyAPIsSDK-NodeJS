@@ -32,7 +32,7 @@ export * from './bufferRelation';
 export * from './buildgClass';
 export * from './buildgCondition';
 export * from './buildgFeaturesSqft';
-export * from './buildgImprovArea';
+export * from './buildgImproveArea';
 export * from './buildgImproveType';
 export * from './buildgQuality';
 export * from './buildgStyle';
@@ -412,7 +412,7 @@ import { BufferRelation } from './bufferRelation';
 import { BuildgClass } from './buildgClass';
 import { BuildgCondition } from './buildgCondition';
 import { BuildgFeaturesSqft } from './buildgFeaturesSqft';
-import { BuildgImprovArea } from './buildgImprovArea';
+import { BuildgImproveArea } from './buildgImproveArea';
 import { BuildgImproveType } from './buildgImproveType';
 import { BuildgQuality } from './buildgQuality';
 import { BuildgStyle } from './buildgStyle';
@@ -787,7 +787,7 @@ let typeMap: {[index: string]: any} = {
     "BuildgClass": BuildgClass,
     "BuildgCondition": BuildgCondition,
     "BuildgFeaturesSqft": BuildgFeaturesSqft,
-    "BuildgImprovArea": BuildgImprovArea,
+    "BuildgImproveArea": BuildgImproveArea,
     "BuildgImproveType": BuildgImproveType,
     "BuildgQuality": BuildgQuality,
     "BuildgStyle": BuildgStyle,
