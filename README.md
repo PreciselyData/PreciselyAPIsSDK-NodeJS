@@ -80,8 +80,6 @@ To build the project locally by downloading from GitHub
 
 npm install
 
-npm run-script build
-
 npm run build
 
 ```
