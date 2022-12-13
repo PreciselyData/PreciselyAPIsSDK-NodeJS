@@ -1,6 +1,6 @@
 {
     "name": "preciselyapis-client",
-    "version": "12.0.1",
+    "version": "12.0.3",
     "description": "NodeJS client for preciselyapis-client",
     "repository": "PreciselyData/PreciselyAPIsSDK-NodeJS",
     "main": "dist/api.js",
@@ -14,10 +14,10 @@
     "license": "Unlicense",
     "dependencies": {
         "bluebird": "^3.3.5",
-        "request": "^2.81.0",
+        "request": "^2.82.0",
         "@types/bluebird": "3.5.33",
         "@types/request": "*",
-        "rewire": "^3.0.2",
+        "rewire": "^6.0.0",
 		 "moment": "^2.22.2"
     },
     "devDependencies": {
