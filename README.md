@@ -122,12 +122,12 @@ try     {
         var _PSAP911ServiceApi = new PreciselyAPINodeJS.PSAP911ServiceApi(data.body);
 		
         _PSAP911ServiceApi.getAHJPlusPSAPByAddress("950 Josephine Street Denver CO 80204").then((response) => {
-            console.log("Result " + JSON.stringify(response.body));
+            console.log("Result " + JSON.stringify(response.data));
         }).catch((response) => {
-            console.log("Error " + JSON.stringify(response.body));
+            console.log("Error " + JSON.stringify(response.data));
         });
  }).catch((error) => {
-        console.log("Error" + JSON.stringify(error))
+        console.log("Error" + JSON.stringify(error.response.data.errors))
     });
 }
 catch (error1) {
