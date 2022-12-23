@@ -108,30 +108,24 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```js
 //We are getting refrence to the installed preciselyapis-client package
 const PreciselyAPINodeJS = require('preciselyapis-client');
-
-try     {
+try {
     // Configure OAuth2 API_KEY and SECRET for authorization
     const oAuth = new PreciselyAPINodeJS.OAuth();
-    oAuth.oAuthApiKey="API_KEY";
-    oAuth.oAuthSecret="SECRET";
-
+    oAuth.oAuthApiKey = "API_KEY";
+    oAuth.oAuthSecret = "SECRET";
 
     oAuth.getOAuthCredentials().then((data) => {
-
-
-        var _PSAP911ServiceApi = new PreciselyAPINodeJS.PSAP911ServiceApi(data.body);
-		
-        _PSAP911ServiceApi.getAHJPlusPSAPByAddress("950 Josephine Street Denver CO 80204").then((response) => {
-            console.log("Result " + JSON.stringify(response.body));
+        var PSAP911ServiceApiExample = new PreciselyAPINodeJS.PSAP911ServiceApi(data.body);
+        PSAP911ServiceApiExample.getPSAPByAddress("950 Josephine Street Denver CO 80204").then((response) => {
+            console.log("Result " + JSON.stringify(response.data));
         }).catch((response) => {
-            console.log("Error " + JSON.stringify(response.body));
+            console.log("Error " + JSON.stringify(response.message));
         });
- }).catch((error) => {
-        console.log("Error" + JSON.stringify(error))
+    }).catch((error) => {
+        console.log("Error " + JSON.stringify(error.response.data.errors))
     });
-}
-catch (error1) {
-    console.log("Exception raised"+ error1);
+} catch (error1) {
+    console.log("Exception raised" + error1);
 }
 ```
 
