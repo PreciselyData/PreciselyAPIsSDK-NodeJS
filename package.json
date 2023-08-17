@@ -1,6 +1,6 @@
 {
   "name": "preciselyapis-client",
-  "version": "16.0.2",
+  "version": "16.0.3",
   "description": "NodeJS client for preciselyapis-client",
   "author": "OpenAPI-Generator Contributors",
   "repository": {
